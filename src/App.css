@@ -2,37 +2,101 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.first-content {
+  padding-top: 50px;
+  background-color: rgba(255, 255, 0, 0.700);
+  transition: all 500ms ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content {}
+
+.content h1 {
+  font-size: 100px;
+  -webkit-text-fill-color: rgb(0, 0, 0);
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.overlay-text {
+  position: inherit;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 70vh;
+  padding: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.jap-text {
+  animation-name: jpn-text;
+  animation-duration: 1.5s;
+  animation-delay: 700ms;
+  animation-fill-mode: forwards;
+  position: absolute;
 }
 
-@keyframes App-logo-spin {
+@keyframes jpn-text {
   from {
-    transform: rotate(0deg);
+    opacity: 1;
   }
+
   to {
-    transform: rotate(360deg);
+    opacity: 0;
   }
 }
+
+.ptbr-text {
+  opacity: 0;
+  animation-name: ptbr-text;
+  animation-duration: 2s;
+  animation-delay: 700ms;
+  animation-fill-mode: forwards;
+  z-index: 1000;
+}
+
+@keyframes ptbr-text {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* .jap-text:hover {
+  animation-name: jpn-text-hover;
+  animation-duration: 600ms;
+  animation-delay: 700ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes jpn-text-hover {
+  
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.ptbr-text:hover {
+  animation-name: ptbr-text-hover;
+  animation-duration: 600ms;
+  animation-delay: 700ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ptbr-text-hover {
+  
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+} */
