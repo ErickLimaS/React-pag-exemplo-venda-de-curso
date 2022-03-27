@@ -1,4 +1,5 @@
-import './styles.css'
+import './styles.css';
+import { Youtube, Facebook, Twitter } from 'react-bootstrap-icons'
 
 export const Footer = () => {
     return (
@@ -9,9 +10,9 @@ export const Footer = () => {
                     <li><a href='#'>Contato</a></li>
                 </ul>
                 <ul>
-                    <li><a href=''>Facebook</a></li>
-                    <li><a href=''>Twitter</a></li>
-                    <li><a href=''>YouTube</a></li>
+                    <li><a href=''><Facebook fill='#4267B2' /> Facebook</a></li>
+                    <li><a href=''><Twitter fill='#1DA1F2' /> Twitter</a></li>
+                    <li><a href=''><Youtube fill='#FF0000' /> YouTube</a></li>
                 </ul>
             </div>
             <hr />

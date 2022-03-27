@@ -3,4 +3,13 @@ div.header-div {
 }
 .navbar {
     background-color: yellow;
+    padding: 5px 0;
+}
+
+.navbar svg {
+    background-color: rgb(255, 255, 255);
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 40px;
 }

@@ -6,8 +6,16 @@ div.footer-div {
     justify-content: space-around;
 }
 
+.footer-div a {
+    color: rgba(0, 0, 0, .9);
+}
+
+.footer-div a:hover {
+    color: rgba(0, 0, 0, 0.600);
+}
+
 .footer-div hr {
-    margin: 0 30vh;
+    width: 0 30vh;
 }
 
 .ul-list {
@@ -24,4 +32,21 @@ div.footer-div {
 
 .ul-list ul li {
     margin: 0 40px;
+}
+
+@media (max-width: 768px) {
+    div.footer-div {
+        flex-direction: column;
+        justify-content: initial;
+    }
+
+    .ul-list ul {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .ul-list {
+
+        flex-direction: column;
+    }
 }

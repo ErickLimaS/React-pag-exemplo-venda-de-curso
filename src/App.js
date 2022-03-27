@@ -3,6 +3,7 @@ import './App.css';
 import { Header } from './components/header';
 import { Footer } from './components/footer';
 import { Tab, Row, ListGroup, Col, Card, Button, Form, InputGroup, FormControl, Accordion } from 'react-bootstrap'
+import WomemSpeakingSvg from './womem-speaking.svg'
 
 function App() {
   return (
@@ -26,18 +27,24 @@ function App() {
           </div>
         </div>
       </section>
-      <section className='description'>
+      <section className='description' id='course'>
+        <h3>Olá! Aqui é a sua nova professora!</h3>
         <div className='description-text'>
-          <h3>Agora no seu computador ou no celular!</h3>
-          <p>
-            Donec rutrum cursus auctor. Etiam at iaculis nulla. Nulla enim nisl, aliquet quis leo ut, tristique iaculis turpis. Ut blandit sollicitudin porttitor. Aenean vitae nisi at nulla scelerisque elementum. Praesent dui lacus, posuere non massa ut, posuere lacinia urna. Nunc ut mi accumsan, fringilla sem et, ornare felis. Aenean interdum, urna pulvinar lacinia venenatis, elit eros scelerisque erat, sit amet iaculis velit diam iaculis metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis vel iaculis sapien, non tincidunt ligula. Suspendisse rutrum, est eget fermentum condimentum, nulla tortor commodo risus, vel feugiat turpis est eget magna. Quisque efficitur nec nisl quis convallis. Phasellus eget fringilla turpis. Aliquam semper nulla id nisi consequat sollicitudin. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-          </p>
+          <div className='speach-bubble'>
+            <p className='bubble bubble-bottom-left'>
+              Donec rutrum cursus auctor. Etiam at iaculis nulla. Nulla enim nisl, aliquet quis leo ut, tristique iaculis turpis. Ut blandit sollicitudin porttitor. Aenean vitae nisi at nulla scelerisque elementum. Praesent dui lacus, posuere non massa ut, posuere lacinia urna. Nunc ut mi accumsan, fringilla sem et, ornare felis. Aenean interdum, urna pulvinar lacinia venenatis, elit eros scelerisque erat, sit amet iaculis velit diam iaculis metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis vel iaculis sapien, non tincidunt ligula. Suspendisse rutrum, est eget fermentum condimentum, nulla tortor commodo risus, vel feugiat turpis est eget magna. Quisque efficitur nec nisl quis convallis. Phasellus eget fringilla turpis. Aliquam semper nulla id nisi consequat sollicitudin. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+          </div>
+          <div className='svg-womem-speaking'>
+            <img src={WomemSpeakingSvg} alt='Representante da Japonês Online'></img>
+            <small>Instrutora e CEO da Japonês Online</small>
+          </div>
         </div>
       </section>
       <hr />
-      <section className='learn-course margin'>
+      <section className='learn-course margin' id='steps'>
         <h3>O que irei aprender?</h3>
-        <div className='k222'>
+        <div className='div-learn'>
           <Tab.Container defaultActiveKey="#ler">
             <Row>
               <Col sm={3}>
@@ -109,13 +116,13 @@ function App() {
           </Tab.Container>
         </div>
       </section>
-      <hr />
-      <section className='preco'>
+      <hr id='prices' />
+      <section className='prices'>
         <div>
           <h4>Preço dos Planos</h4>
         </div>
 
-        <div className='div-precos'>
+        <div className='div-prices'>
           <Card style={{ width: '20rem' }}>
             <Card.Header as="h5">Plano Básico</Card.Header>
             <Card.Body>
@@ -174,7 +181,7 @@ function App() {
               </Col>
               <Col xs="auto">
                 <Button type="submit" className="mb-2">
-                  Enviar
+                  Receber Ebook
                 </Button>
               </Col>
             </Row>
@@ -256,7 +263,7 @@ function App() {
               est laborum.
             </Accordion.Body>
           </Accordion.Item>
-          
+
         </Accordion>
       </section>
       <Footer />
