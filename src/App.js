@@ -32,7 +32,7 @@ function App() {
         <div className='description-text'>
           <div className='speach-bubble'>
             <p className='bubble bubble-bottom-left'>
-              Donec rutrum cursus auctor. Etiam at iaculis nulla. Nulla enim nisl, aliquet quis leo ut, tristique iaculis turpis. Ut blandit sollicitudin porttitor. Aenean vitae nisi at nulla scelerisque elementum. Praesent dui lacus, posuere non massa ut, posuere lacinia urna. Nunc ut mi accumsan, fringilla sem et, ornare felis. Aenean interdum, urna pulvinar lacinia venenatis, elit eros scelerisque erat, sit amet iaculis velit diam iaculis metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis vel iaculis sapien, non tincidunt ligula. Suspendisse rutrum, est eget fermentum condimentum, nulla tortor commodo risus, vel feugiat turpis est eget magna. Quisque efficitur nec nisl quis convallis. Phasellus eget fringilla turpis. Aliquam semper nulla id nisi consequat sollicitudin. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+              Donec rutrum cursus auctor. Etiam at iaculis nulla. Nulla enim nisl, aliquet quis leo ut, tristique iaculis turpis. Ut blandit sollicitudin porttitor. Aenean vitae nisi at nulla scelerisque elementum. Praesent dui lacus, posuere non massa ut, posuere lacinia urna. Nunc ut mi accumsan, fringilla sem et, ornare felis. Aenean interdum, urna pulvinar lacinia venenatis, elit eros scelerisque erat, sit amet iaculis velit diam iaculis metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis vel iaculis sapien, non tincidunt ligula. Suspendisse rutrum, est eget fermentum condimentum, nulla tortor commodo risus, vel feugiat turpis est eget magna. Quisque efficitur nec nisl quis convallis.
             </p>
           </div>
           <div className='svg-womem-speaking'>
@@ -119,7 +119,7 @@ function App() {
       <hr id='prices' />
       <section className='prices'>
         <div>
-          <h4>Preço dos Planos</h4>
+          <h3>Preço dos Planos</h3>
         </div>
 
         <div className='div-prices'>
@@ -165,7 +165,7 @@ function App() {
         </div>
       </section>
       <section className='email-input'>
-        <h4>Quer receber um Ebook e comecar a estudar agora?</h4>
+        <h3>Quer receber um Ebook e comecar a estudar agora?</h3>
         <p>Informe o seu email e enviaremos um ebook com tudo que é preciso para começar a aprender!</p>
         <div className='form-input-email'>
           <Form>
@@ -189,7 +189,7 @@ function App() {
         </div>
       </section>
       <section className='questions-answers'>
-        <h4>Perguntas e Respostas</h4>
+        <h3>Perguntas e Respostas</h3>
         <Accordion>
           <Accordion.Item eventKey="0">
             <Accordion.Header>Quanto tempo estudando eu preciso para aprender?</Accordion.Header>

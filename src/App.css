@@ -1,3 +1,4 @@
+/* Whole page*/
 .App {
   text-align: center;
 }
@@ -8,6 +9,18 @@
 
 hr {
   margin: 0 10vh;
+}
+
+.btn-primary {
+  color: rgba(0, 0, 0, 0.808);
+  background-color: rgba(255, 255, 0, 0.445);
+  border-color: yellow;
+}
+
+.btn-primary:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 0, 0.61);
+  border-color: yellow;
 }
 
 /*section FIRST CONTENT*/
@@ -103,6 +116,10 @@ hr {
   margin: 40px;
 }
 
+.description h3 {
+  font-size: 40px;
+}
+
 .description-text {
   margin: 40px;
   display: flex;
@@ -162,7 +179,8 @@ hr {
   .bubble {
     width: fit-content;
   }
-  .bubble-bottom-left:before{
+
+  .bubble-bottom-left:before {
     display: none;
   }
 
@@ -186,9 +204,10 @@ hr {
   .bubble {
     width: fit-content;
   }
-  .description-text p{
-    
-    padding: 30px!important;
+
+  .description-text p {
+
+    padding: 30px !important;
   }
 }
 
@@ -201,6 +220,7 @@ hr {
 
 .learn-course h3 {
   margin: 40px 0 60px 0;
+  font-size: 40px;
 }
 
 .learn-course h4 {
@@ -212,6 +232,9 @@ hr {
 .learn-course ol {
   padding: 20px;
   text-align: initial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .div-learn {
@@ -225,7 +248,7 @@ hr {
 }
 
 .list-group-item.active {
-  background-color: yellow;
+  background-color: rgba(255, 255, 0, 0.5);
   color: rgb(44, 44, 44);
   border-color: yellow;
 }
@@ -251,13 +274,22 @@ hr {
   justify-content: space-evenly;
 }
 
-.prices h4 {
-  margin: 40px 0;
+.prices h3 {
+  margin: 40px 0 60px 0;
+  font-size: 40px;
 }
 
 .card {
+  transition: all ease-in-out 250ms;
+  box-shadow: 0px 0px 15px 0px #41464ba4;
+  ;
+}
 
-  box-shadow: 10px 10px #41464b;
+.card:hover {
+  margin-top: -5px;
+  margin-bottom: 5px;
+  transform: scale(1.005);
+  box-shadow: 10px 10px #41464bd9;
 }
 
 .card div:first-child {
@@ -295,17 +327,33 @@ hr {
   flex-direction: column;
   align-items: center;
   background-color: yellow;
-  box-shadow: 20px 9px 0px 0px #41464b;
+  box-shadow: 20px 9px 0px 0px #41464bd9;
 }
 
 .email-input input.form-control {
   width: 400px;
 }
 
+.email-input .btn-primary {
+  color: rgba(0, 0, 0, 0.808);
+  background-color: rgba(255, 255, 255, 0.849);
+  border-color: rgb(0, 0, 0);
+}
 
 .form-input-email {
   padding: 20px;
 
+}
+
+.col-auto {
+  width: initial;
+}
+
+@media (max-width: 700px) {
+
+  .col-auto {
+    width: -webkit-fill-available;
+  }
 }
 
 /*section Questions-Answers */
@@ -314,13 +362,14 @@ hr {
   margin: 0 40vh 40px 40vh;
 }
 
-.questions-answers H4 {
-  margin: 40px 0;
+.questions-answers h3 {
+  margin: 40px 0 60px 0;
+  font-size: 36px;
 }
 
 @media (max-width: 1023px) {
   .questions-answers {
-    margin:  10px;
+    margin: 10px;
   }
 
   .email-input input.form-control {
