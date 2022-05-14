@@ -16,7 +16,7 @@ export const Footer = () => {
                 </ul>
             </div>
             <hr />
-            <small>Feito apenas para portfólio. Todo conteúdo é fictício.</small>
+            <small>Site para o <a href='https://erick-lima.netlify.app/' target='_blank' rel='noreferrer'>Meu Portfólio</a>.</small>
         </div>
     )
 }
